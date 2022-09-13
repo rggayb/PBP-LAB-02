@@ -4,7 +4,7 @@
 [Katalog page](https://lab02pbp.herokuapp.com/katalog/)
 
 # Diagram
-![alt text](./assets/diagram.JPG "diagram")
+![alt text](./assets/Diagram.jpg "diagram")
 
 # Kenapa menggunakan virtual envinronments? Dapatkah tetap membuat django app?
 Karena dengan menggunakan virtual environtment otomatis kita melakukan instalasi packages dan dependencies yang diperlukan dalam framework django yang tidak terinstalasi secara global di local. jika tidak menggunakan virtual environtment, kita hanya bisa sebatas mengakses dari folder/direktori yang telah terinstal. Dengan virtual environtment kita juga dapat membuat lingkungan kerja python yang terisolasi sehingga tidak menganggu ketika kita memiliki project yang banyak.
