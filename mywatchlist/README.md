@@ -1,3 +1,8 @@
+# Link menuju home page dan mywatchlist
+[Home page](https://lab02pbp.herokuapp.com/)
+
+[MyWatchlist page](https://lab02pbp.herokuapp.com/mywatchlist/)
+
 # Jelaskan perbedaan antara JSON, XML, dan HTML!
 JSON, XML, dan HTML adalah sebuah data delivery yang memiliki perbedaan antara satu sama lain. 
 
