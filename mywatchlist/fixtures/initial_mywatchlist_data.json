@@ -1,0 +1,119 @@
+[
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":1,
+        "fields":{
+            "watched":"YES",
+            "title":"Me Before You",
+            "rating": 5,
+            "release_date": "12/10/2005",
+            "review": "Film ini sangat emosional dan membuat menangis"
+        }
+},
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":2,
+        "fields":{
+            "watched":"NO",
+            "title":"All the Things About Greek Gods",
+            "rating": 1,
+            "release_date": "10/11/2020",
+            "review": "Film tentang Dewa-Dewi yunani, sangat seru"
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":3,
+        "fields":{
+            "watched":"YES",
+            "title":"Big Mouseouth",
+            "rating": 3,
+            "release_date": "20/01/2015",
+            "review": "Menceritakan Park Cyonyang yang dituduh menjadi seorang penipu."
+        }
+    },
+
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":4,
+        "fields":{
+            "watched":"YES",
+            "title":"Miracle in Cell no no no",
+            "rating": 1,
+            "release_date": "15/09/2022",
+            "review": "Menceritakan tentang anak kecil yang terpisah dari ayahnya karena ya gapapa"
+        }
+    },
+
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":5,
+        "fields":{
+            "watched":"YES",
+            "title":"Mencuri pak Raden",
+            "rating": 4,
+            "release_date": "10/11/2009",
+            "review": "Film ini menceritakan pencurian pak Raden di rumahnya pak Raden, sangat menegangkan"
+        }
+    },
+
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":6,
+        "fields":{
+            "watched":"YES",
+            "title":"Tenggelamnya kapal bajakan",
+            "rating": 5,
+            "release_date": "10/11/2021",
+            "review": "Film ini menceritakan kapal yang tenggelam karena bocor ga pake no drop, emosional dan menegangkan"
+        }
+    },
+
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":7,
+        "fields":{
+            "watched":"NO",
+            "title":"The Uvenjer",
+            "rating": 2,
+            "release_date": "01/09/2019",
+            "review": "Berawal dari keinginan seseorang bernama thonas untuk menguasai dunia, akhirnya para pahlawan melawannya, sangat seru."
+        }
+    },
+
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":8,
+        "fields":{
+            "watched":"NO",
+            "title":"Godzalli",
+            "rating": 5,
+            "release_date": "15/04/2018",
+            "review": "Sesosok monster jahat ingin menghancurkan kota. Tone film dark dan mencekam"
+        }
+    },
+
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":9,
+        "fields":{
+            "watched":"YES",
+            "title":"HunteryHunter",
+            "rating": "3",
+            "release_date": "10/05/2004",
+            "review": "Film yang mengusung tema persahabatan, sangat direkomendasikan untuk ditonton"
+        }
+    },
+
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":10,
+        "fields":{
+            "watched":"YES",
+            "title":"Demon Slayer",
+            "rating": 5,
+            "release_date": "06/04/2016",
+            "review": "Film yang sangat keren, brilian, spektakuler. Storyline yang bagus dan penokohan yang kuat membuat film ini menjadi salah satu film terbaik yang pernah ditonton"
+        }
+    }
+]

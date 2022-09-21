@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from katalog.models import CatalogItem
+from django.http import HttpResponse
+from django.core import serializers
 
 # TODO: Create your views here.
 def show_katalog(request):
