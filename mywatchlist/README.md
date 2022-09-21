@@ -1,11 +1,3 @@
-# Link menuju katalog dan home page
-[Home page](https://lab02pbp.herokuapp.com/)
-
-[Katalog page](https://lab02pbp.herokuapp.com/katalog/)
-
-# Diagram
-![alt text](./assets/Diagram.jpg "diagram")
-
 # Jelaskan perbedaan antara JSON, XML, dan HTML!
 JSON, XML, dan HTML adalah sebuah data delivery yang memiliki perbedaan antara satu sama lain. 
 
@@ -48,6 +40,6 @@ path('json/', show_json, name='show_json')
 10. Penambahan unit test pada test.py. Hal ini bertujuan untuk melakukan pengujian URL dapat mengembalikan respon HTTP 200 OK.
 
 # AKSES URL DENGAN POSTMAN
-![alt text](./asset/Postman1.jpg "postman1")
-![alt text](./asset/Postman2.jpg "postman2")
-![alt text](./asset/Postman3.jpg "postman3")
+![alt text](./asset/Postman1.png "postman1")
+![alt text](./asset/Postman2.png "postman2")
+![alt text](./asset/Postman3.png "postman3")
