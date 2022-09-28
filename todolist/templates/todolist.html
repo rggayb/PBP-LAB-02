@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <h1>Tugas 4 PBP/PBD</h1>
+
+  <h5>Logged in as : </h5>
+  <p>{{nama}}</p>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Option</th>
+    </tr>
+    {% comment %} Loop di todo_list_data {% endcomment %}
+      {% for task in todo_list %}
+      <tr>
+          <td>{{task.date}}</td>
+          <td>{{task.title}}</td>
+          <td>{{task.description}}</td>
+          <td>{% if task.is_finished %} Finished {% else %} Not Yet {% endif %}</td>
+          <th>
+            <button><a href="{% url 'todolist:update_finished' task.id %}" title="">Change Status</a></button>
+            <button><a href="{% url 'todolist:delete_task' task.id %}" title="">Delete Task</a></button>
+          </th>
+          {% endfor %}
+      </tr>
+  </table>
+<button><a href="{% url 'todolist:create_task' %}">Create Task</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+ {% endblock content %}

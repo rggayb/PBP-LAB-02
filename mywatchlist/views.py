@@ -30,6 +30,14 @@ def show_mywatchlist(request):
     }
     return render(request, 'mywatchlist.html', context)
 
+def belum_ditonton(request):
+    data = MyWatchlistItem.objects.filter(watched = "NO")
+    context = {
+        'item_mywatchlist': data,
+        'nama' : 'Rangga Yudhistira',
+    }
+    return render(request, 'mywatchlist.html', context)
+
 def show_xml(request):
     data = MyWatchlistItem.objects.all()
     return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
