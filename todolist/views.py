@@ -24,7 +24,7 @@ def show_todo_list(request):
         'nama': request.user.username,
         'user': request.user
     }
-    return render(request, 'todolisttest.html', context)
+    return render(request, 'todolist.html', context)
 
 def show_json(request):
     return HttpResponse(serializers.serialize("json", todo_list_data), content_type="application/json")
@@ -40,7 +40,7 @@ def register(request):
             return redirect('todolist:login')
 
     context = {'form': form}
-    return render(request, 'registertest.html', context)
+    return render(request, 'register.html', context)
 
 def login_user(request):
     context = {
@@ -57,7 +57,7 @@ def login_user(request):
         else:
             messages.info(request, 'Username atau Password salah!')
     context = {}
-    return render(request, 'logintest.html', context)
+    return render(request, 'login.html', context)
 
 def logout_user(request):
     logout(request)
@@ -77,7 +77,7 @@ def create_task(request):
             date=datetime.datetime.today(),
         )
         return HttpResponseRedirect(reverse("todolist:show_todo_list"))
-    return render(request, "create_tasktest.html")
+    return render(request, "create_task.html")
 
 @login_required(login_url="/todolist/login/")
 def update_finished(request, id):
