@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Create Task</title>
+<link rel="stylesheet" href="{% static 'logintest.css'%}">
+{% endblock meta %}
+
+{% block content %}
+
+<div class="login-box">
+    <h2>Create Task</h2>
+    <form method="POST" action="">
+      {% csrf_token %}
+      <div class="user-box">
+        <input type="text" name="title" required="" class="form-control">
+        <label>Title</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="description" required="" class="form-control">
+        <label>Description</label>
+      </div>
+      <a href="{% url 'todolist:show_todo_list' %}">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <tr>
+            <td></td>
+            <td><input style="color:white" class="btn login_btn" type="submit" value="Add task"></td>
+        </tr>
+        
+      </a>
+      
+
+
+    </form>
+
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}     
+
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Login</title>
+<link rel="stylesheet" href="{% static 'logintest.css'%}">
+{% endblock meta %}
+
+{% block content %}
+
+<div class="login-box">
+    <h2>Login</h2>
+    <form method="POST" action="">
+      {% csrf_token %}
+      <div class="user-box">
+        <input type="text" name="username" required="" class="form-control">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required="" class="form-control">
+        <label>Password</label>
+      </div>
+      <a href="{% url 'todolist:show_todo_list' %}">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <tr>
+            <td></td>
+            <td><input style="color:white" class="btn login_btn" type="submit" value="Login"></td>
+        </tr>
+        
+      </a>
+      
+
+
+    </form>
+
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}     
+    <p class="text-white">
+        Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
+    </p>
+    
+    
+  </div>
+
+{% endblock content %}
