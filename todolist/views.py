@@ -11,6 +11,7 @@ from todolist.forms import TaskForm
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 import datetime
+from django.http import JsonResponse
 
 
 todo_list_data = Task.objects.all().values()
@@ -27,7 +28,8 @@ def show_todo_list(request):
     return render(request, 'todolist.html', context)
 
 def show_json(request):
-    return HttpResponse(serializers.serialize("json", todo_list_data), content_type="application/json")
+    data = Task.objects.filter(user = request.user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 def register(request):
     form = UserCreationForm()
@@ -91,3 +93,25 @@ def delete_task(request, id):
     task = Task.objects.get(user=request.user, id=id)
     task.delete()
     return HttpResponseRedirect(reverse("todolist:show_todo_list"))
+
+def add_ajax(request):
+    if request.user.is_authenticated:
+        form = create_form(request.POST)
+        data = {}
+
+        if request.method == 'POST' and form.is_valid():
+            title = form.cleaned_data['title']
+            description = form.cleaned_data['description']
+            new_task = Task.objects.create(title=title, description=description, user=request.user, date=datetime.date.today())
+            data['title'] = title
+            data['description'] = description
+            data['user'] = request.user
+            data['date'] = datetime.date.today()
+            return JsonResponse(data)
+
+        # context = {
+        #     'form': form,
+        # }
+        # return render(request, 'create-task.html', context)
+    else:
+        return redirect('todolist:login')

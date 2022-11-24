@@ -31,7 +31,7 @@ def show_mywatchlist(request):
     return render(request, 'mywatchlist.html', context)
 
 def belum_ditonton(request):
-    data = MyWatchlistItem.objects.filter(watched = "NO")
+    data = MyWatchlistItem.objects.filter(watched = False)
     context = {
         'item_mywatchlist': data,
         'nama' : 'Rangga Yudhistira',

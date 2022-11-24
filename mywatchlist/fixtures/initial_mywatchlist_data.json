@@ -3,10 +3,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":1,
         "fields":{
-            "watched":"YES",
+            "watched":true,
             "title":"Me Before You",
             "rating": 5,
-            "release_date": "12/10/2005",
+            "release_date": "2005-12-10",
             "review": "Film ini sangat emosional dan membuat menangis"
         }
 },
@@ -14,10 +14,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":2,
         "fields":{
-            "watched":"NO",
+            "watched":false,
             "title":"All the Things About Greek Gods",
             "rating": 1,
-            "release_date": "10/11/2020",
+            "release_date": "2020-10-11",
             "review": "Film tentang Dewa-Dewi yunani, sangat seru"
         }
     },
@@ -25,10 +25,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":3,
         "fields":{
-            "watched":"YES",
+            "watched":true,
             "title":"Big Mouseouth",
             "rating": 3,
-            "release_date": "20/01/2015",
+            "release_date": "2015-12-01",
             "review": "Menceritakan Park Cyonyang yang dituduh menjadi seorang penipu."
         }
     },
@@ -37,10 +37,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":4,
         "fields":{
-            "watched":"YES",
+            "watched":true,
             "title":"Miracle in Cell no no no",
             "rating": 1,
-            "release_date": "15/09/2022",
+            "release_date": "2022-12-09",
             "review": "Menceritakan tentang anak kecil yang terpisah dari ayahnya karena ya gapapa"
         }
     },
@@ -49,10 +49,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":5,
         "fields":{
-            "watched":"YES",
+            "watched":true,
             "title":"Mencuri pak Raden",
             "rating": 4,
-            "release_date": "10/11/2009",
+            "release_date": "2009-10-11",
             "review": "Film ini menceritakan pencurian pak Raden di rumahnya pak Raden, sangat menegangkan"
         }
     },
@@ -61,10 +61,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":6,
         "fields":{
-            "watched":"YES",
+            "watched":true,
             "title":"Tenggelamnya kapal bajakan",
             "rating": 5,
-            "release_date": "10/11/2021",
+            "release_date": "2021-10-11",
             "review": "Film ini menceritakan kapal yang tenggelam karena bocor ga pake no drop, emosional dan menegangkan"
         }
     },
@@ -73,10 +73,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":7,
         "fields":{
-            "watched":"NO",
+            "watched":false,
             "title":"The Uvenjer",
             "rating": 2,
-            "release_date": "01/09/2019",
+            "release_date": "2019-01-09",
             "review": "Berawal dari keinginan seseorang bernama thonas untuk menguasai dunia, akhirnya para pahlawan melawannya, sangat seru."
         }
     },
@@ -85,10 +85,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":8,
         "fields":{
-            "watched":"NO",
+            "watched":false,
             "title":"Godzalli",
             "rating": 5,
-            "release_date": "15/04/2018",
+            "release_date": "2018-11-04",
             "review": "Sesosok monster jahat ingin menghancurkan kota. Tone film dark dan mencekam"
         }
     },
@@ -97,10 +97,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":9,
         "fields":{
-            "watched":"YES",
+            "watched":true,
             "title":"HunteryHunter",
-            "rating": "3",
-            "release_date": "10/05/2004",
+            "rating": 3,
+            "release_date": "2004-10-05",
             "review": "Film yang mengusung tema persahabatan, sangat direkomendasikan untuk ditonton"
         }
     },
@@ -109,10 +109,10 @@
         "model":"mywatchlist.mywatchlistitem",
         "pk":10,
         "fields":{
-            "watched":"YES",
+            "watched":true,
             "title":"Demon Slayer",
             "rating": 5,
-            "release_date": "06/04/2016",
+            "release_date": "2016-06-04",
             "review": "Film yang sangat keren, brilian, spektakuler. Storyline yang bagus dan penokohan yang kuat membuat film ini menjadi salah satu film terbaik yang pernah ditonton"
         }
     }
